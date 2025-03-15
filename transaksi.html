@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Layanan Aduan Masyarakat</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" style="height: 40px;">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="d-flex align-items-center ms-auto">
+                    <ul class="navbar-nav me-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                            id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="img/person-circle.svg" alt="User Icon" style="height: 40px;">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="d-flex flex-column align-items-center mt-5">
+        <h1 class="fw-bold mb-5">Transaksi</h1>
+        <div class="custom-container w-100 p-5">
+            <form action="detail_transaksi.php" method="post">
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <div class="custom-box"
+                        style="background-color: #d1d5db ; padding: 20px ; border-radius: 10px;">
+                        <h2 class="fw-bold mb-3 text-center">Detail Transaksi</h2>
+                        <div class="row mb-3">
+                            <label for="nama_jasa" class="col-sm-7 col-form-label">Nama Jasa</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="nama_jasa" class="form-control" id="nama_jasa">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                                <label class="col-sm-7 col-form-label">Nama</label>
+                                <div class="col-sm-5">
+                                    <input type="text" name="nama_pelapor" class="form-control" id="nama_pelapor">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="no_telp" class="col-sm-7 col-form-label">No. Telp</label>
+                                <div class="col-sm-5">
+                                <input type="text" name="no_hp" class="form-control" id="no_hp">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="alamat" class="col-sm-7 col-form-label">Alamat</label>
+                                <div class="col-sm-5">
+                                  <textarea type="text" name="alamat" class="form-control" id="alamat"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="tanggal" class="col-sm-7 col-form-label">Tanggal Layanan Dilaksanakan</label>
+                                <div class="col-sm-5">
+                                  <input type="date" name="tanggal" class="form-control" id="tanggal">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="harga" class="col-sm-7 col-form-label"><b>Total Harga</b></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="custom-box"
+                            style="background-color: #d1d5db ; padding: 20px ; border-radius: 10px;">
+                            <h2 class="fw-bold mb-3 text-center">Metode Pembayaran</h2>
+                            <div class="custom-box" style=" background-color: #fffbfb; padding: 10px; border-radius: 10px; margin-top: 20px; margin-bottom: 20px;">
+                                <div class="form-check mb-2 mt-2">
+                                    <input type="radio" name="metode_pembayaran" value="COD" required>
+                                    <label class="form-check-label" for="COD"><b>COD</b></label>
+                                </div>
+                            </div>
+                            <div class="custom-box" style=" background-color: #fffbfb; padding: 10px; border-radius: 10px; margin-top: 20px; margin-bottom: 20px;">
+                                <div class="form-check mb-2 mt-2">
+                                    <input type="radio" name="metode_pembayaran" value="Transfer" required>
+                                    <label class="form-check-label" for="transfer"><b>Transfer</b></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-box"
+                            style="background-color: #d1d5db ; padding: 20px ; border-radius: 10px; margin-top: 20px;">
+                            <h4 class="fw-bold mb-3 text-center">Informasi</h4>
+                            <label for="rekening" class="col-sm-7 col-form-label">Nomor rekening</label>
+                            <p>Jika Anda memiliki pertanyaan lebih lanjut, silakan hubungi tim kami.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                    <button type="submit" class="btn btn-primary btn-lg">Bayar Sekarang</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+
+</body>
+<footer class="bg-dark text-white mt-5" style="padding: 20px; text-align: left;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Tentang Kami</h5>
+                <p>Kami adalah komunitas yang berfokus pada layanan dengan komitmen untuk memberikan solusi terbaik dan
+                    kepuasan masyarakat.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Link Penting</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#atas" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">Tentang</a></li>
+                    <li><a href="#" class="text-white">Layanan</a></li>
+                    <li><a href="#" class="text-white">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Hubungi Kami</h5>
+                <p>Email: info@example.com</p>
+                <p>Telepon: (123) 456-7890</p>
+            </div>
+        </div>
+    </div>
+    <div class="text-center py-3">
+        <small>&copy; 2025 Nama Kelurahan. Semua hak dilindungi.</small>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</html>

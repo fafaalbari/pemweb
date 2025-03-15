@@ -1,0 +1,26 @@
+Layanan Aduan Masyarakat
+
+Anggota Kelompok 2 :  
+
+1. Citra Tri Setyaningrum           (V3424005)
+2. Muhammad Farih Ibnu Mahin        (V3424012)
+3. Nadea Nur Fadlila                (V3424014)
+4. Falih Fadhil Albari              (V3424024)
+5. Naufal Razif Ash Shidiqie        (V3424032)
+6. Nisrina Khalisha Salsabila       (V3424033)
+ 
+Tugas 4 Membuat Tampilan Form Input dan Tabel Hasil Sesuai Project masing-masing
+Tugas Kelompok:
+Dengan Menggunakan tabel dan form HTML sesuai project kelompok masing-masing buatlah :
+
+1. Halaman Tampilan form untuk isian Data Informasi Layanan / Produk dengan ketentuan terdapat type inputan text, textarea, file (khusus gambar), date, radio, checkbox, select, hidden dan halaman hasilnya
+2. Halaman Tampilan form untuk isian Layanan / Simulasi produk barang / jasa dan halaman hasilnya
+
+Semua kebutuhan web di zip dan diberi nama file Tugas4_project.zip kemudian upload untuk penyelesaian tugas
+ 
+1. file "form.html" dan tampilannya di file "detail_laporan.php"
+2. file "transaksi.html" dan tampilannya di file "detail_transaksi.php"
+
+nb: file lainnya hanya file pendukung
+ 
+ 
